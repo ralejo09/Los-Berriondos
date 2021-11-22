@@ -11,3 +11,4 @@ export * from './proveedor.model';
 export * from './usuario.model';
 export * from './visitas-py-p.model';
 
+export * from './credenciales.model';
