@@ -1,4 +1,6 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, hasMany} from '@loopback/repository';
+import {ConsultaVeterinaria} from './consulta-veterinaria.model';
+import {Producto} from './producto.model';
 
 @model()
 export class Proveedor extends Entity {
@@ -45,6 +47,11 @@ export class Proveedor extends Entity {
   })
   ciudad: string;
 
+  @hasMany(() => ConsultaVeterinaria)
+  consultaVeterinarias: ConsultaVeterinaria[];
+
+  @hasMany(() => Producto)
+  productos: Producto[];
 
   constructor(data?: Partial<Proveedor>) {
     super(data);

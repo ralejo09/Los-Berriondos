@@ -4,7 +4,7 @@ import {juggler} from '@loopback/repository';
 const config = {
   name: 'mongodb',
   connector: 'mongodb',
-  url: '',
+  url: 'mongodb://ralejo09:botas010@clusterprogwebmisiontic-shard-00-00.2stsv.mongodb.net:27017,clusterprogwebmisiontic-shard-00-01.2stsv.mongodb.net:27017,clusterprogwebmisiontic-shard-00-02.2stsv.mongodb.net:27017/losBerriondos?ssl=true&replicaSet=atlas-4kl99h-shard-0&authSource=admin&retryWrites=true&w=majority',
   host: '',
   port: 0,
   user: '',

@@ -1,4 +1,7 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, hasMany} from '@loopback/repository';
+import {Empleado} from './empleado.model';
+import {VisitasPyP} from './visitas-py-p.model';
+import {Mascota} from './mascota.model';
 
 @model()
 export class Empleado extends Entity {
@@ -81,6 +84,19 @@ export class Empleado extends Entity {
   })
   foto: string;
 
+  @hasMany(() => Empleado)
+  empleados: Empleado[];
+
+  @property({
+    type: 'string',
+  })
+  empleadoId?: string;
+
+  @hasMany(() => VisitasPyP)
+  visitasPyPS: VisitasPyP[];
+
+  @hasMany(() => Mascota)
+  mascotas: Mascota[];
 
   constructor(data?: Partial<Empleado>) {
     super(data);

@@ -1,4 +1,9 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, belongsTo, hasMany} from '@loopback/repository';
+import {Cliente} from './cliente.model';
+import {ConsultaVeterinaria} from './consulta-veterinaria.model';
+import {PagosPlanes} from './pagos-planes.model';
+import {Empleado} from './empleado.model';
+import {VisitasPyP} from './visitas-py-p.model';
 
 @model()
 export class Mascota extends Entity {
@@ -81,6 +86,20 @@ export class Mascota extends Entity {
   })
   foto: string;
 
+  @belongsTo(() => Cliente)
+  clienteId: string;
+
+  @hasMany(() => ConsultaVeterinaria)
+  consultaVeterinarias: ConsultaVeterinaria[];
+
+  @hasMany(() => PagosPlanes)
+  pagosPlanes: PagosPlanes[];
+
+  @belongsTo(() => Empleado)
+  empleadoId: string;
+
+  @hasMany(() => VisitasPyP)
+  visitasPyPS: VisitasPyP[];
 
   constructor(data?: Partial<Mascota>) {
     super(data);
