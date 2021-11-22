@@ -1,6 +1,6 @@
 import {Entity, model, property, hasMany, belongsTo} from '@loopback/repository';
 import {Pedido} from './pedido.model';
-import {Cliente} from './cliente.model';
+//import {Cliente} from './cliente.model';
 import {Mascota} from './mascota.model';
 
 @model()

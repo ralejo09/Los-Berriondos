@@ -1,5 +1,5 @@
 import {Entity, model, property, hasMany} from '@loopback/repository';
-import {Empleado} from './empleado.model';
+//import {Empleado} from './empleado.model';
 import {VisitasPyP} from './visitas-py-p.model';
 import {Mascota} from './mascota.model';
 

@@ -17,7 +17,7 @@ import {
 } from '@loopback/rest';
 import {
   Empleado,
-  Empleado,
+  
 } from '../models';
 import {EmpleadoRepository} from '../repositories';
 

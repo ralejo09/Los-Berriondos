@@ -17,7 +17,7 @@ import {
 } from '@loopback/rest';
 import {
   Cliente,
-  Cliente,
+  
 } from '../models';
 import {ClienteRepository} from '../repositories';
 

@@ -3,7 +3,7 @@ import {DefaultCrudRepository, repository, HasManyRepositoryFactory, BelongsToAc
 import {MongodbDataSource} from '../datasources';
 import {Cliente, ClienteRelations, Pedido, Mascota} from '../models';
 import {PedidoRepository} from './pedido.repository';
-import {ClienteRepository} from './cliente.repository';
+//import {ClienteRepository} from './cliente.repository';
 import {MascotaRepository} from './mascota.repository';
 
 export class ClienteRepository extends DefaultCrudRepository<

@@ -2,7 +2,7 @@ import {inject, Getter} from '@loopback/core';
 import {DefaultCrudRepository, repository, HasManyRepositoryFactory} from '@loopback/repository';
 import {MongodbDataSource} from '../datasources';
 import {Empleado, EmpleadoRelations, VisitasPyP, Mascota} from '../models';
-import {EmpleadoRepository} from './empleado.repository';
+//import {EmpleadoRepository} from './empleado.repository';
 import {VisitasPyPRepository} from './visitas-py-p.repository';
 import {MascotaRepository} from './mascota.repository';
 
