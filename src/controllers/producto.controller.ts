@@ -49,6 +49,7 @@ export class ProductoController {
     return this.productoRepository.create(producto);
   }
 
+  @authenticate.skip()
   @get('/productos/count')
   @response(200, {
     description: 'Producto model count',
